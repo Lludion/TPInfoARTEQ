@@ -99,3 +99,4 @@ print("finale:",res)
 
 plt.plot(arange(16),vabs(res))
 plt.show()
+

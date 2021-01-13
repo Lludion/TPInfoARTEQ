@@ -101,7 +101,9 @@ print(bs2nat("0011010"))
 
 # # 2 - QPE
 # 
-# Nous avons vu l'algorithme de QPE en cours sur 3 qubits, et vous avez eu à vérifier qu'il faisait ce qu'il fallait. Ici nous allons l'implémenter ici pour l'opérateur $U$ suivant.
+# Nous avons vu l'algorithme de QPE en cours sur 3 qubits, 
+#et vous avez eu à vérifier qu'il faisait ce qu'il fallait
+#. Ici nous allons l'implémenter ici pour l'opérateur $U$ suivant.
 
 # In[61]:
 
@@ -600,7 +602,12 @@ def Shor(M):
 
 
 # In[ ]:
-
-
+from sys import argv
+try:
+	num = int(argv[1])
+except:
+	num = 28
+print("Launching Shor with value",num)
+print("SHOR's response : ",Shor(num))
 
 
